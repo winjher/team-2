@@ -1,34 +1,100 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Project Team2</title>
-    
-    <!-- Including CSS like a template. Not ideal for actual production app -->
-     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-      <h2 id="">Welcome Team2</h2>
-      <section id="section-list">
-          <h3 id="header">Name</h3>
-          <ol id="section-list__items">
-              <li>Jerwin Montellano-Team Leader</li>
-              <li>Ruben Sape-Scrum Master </li>
-              <li>Angel Niño Ortega</li>
-              <li>Arvilyza Rabago</li>
-              <li>Josiah Matela</li>
-              <li>Rey Vincent Leal</li>
-              <li>Eduardo Graganza Jr.</li>         
-              <li>Romulo Pahuyo Jr.</li>
-              <li>Jonathan Mariano</li>
-              <li>Crisanto Pedroso</li>
-          </ol>
-      </section>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-page">
+      <div class="header-container">
+        <a href="/" class="ice-cream-icon">
+          <svg width="20" height="20">
+            <use href="./images/icons.svg#icon-icecream"></use>
+          </svg>
+        </a>
 
-<p>Please send your email here..</p>
-<p><a href="https://github.com/winjher/team-2/settings/access">Join our repository</a> </p>
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="home" href="">Home</a>
+          </li>
+          <li class="menu-list-ietm">
+            <a class="made" href="">How its's made?</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="products" href="">Our Products</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="contact" href="">Contact</a>
+          </li>
+        </ul>
+        <button type="button" class="button">Buy Now</button>
 
-    
-<!-- Including JS code like a template. Not ideal for actual production app -->
-<script> </script>
-</body>
+        <section class="title-name">
+          <h1 class="title-name-section">Ice Cream Made with Passion</h1>
+          <ul>
+            <li>16</li>
+            <p>cafes</p>
+            <li>23</li>
+            <p>food trucks</p>
+          </ul>
+          <ul>
+            <li>Products</li>
+            <li>How it's made?</li>
+          </ul>
+          <p>
+            Indulge in a scoop of ice cream made with passion and treat your
+            taste buds to an unforgettable experience!
+          </p>
+        </section>
+      </div>
+
+      <footer class="footer-page">
+        <div class="container">
+          <h1>HOMEMADE ICE CREAM MADE</h1>
+          <h1>WITH PASSION</h1>
+        </div>
+        <div class="social-media">
+          <ul class="social-media-list">
+            <li class="social-media-item">
+              <a href="/" class="social-media-link">
+                <svg class="social-media-icon-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-icon">
+              <a href="/" class="social-media-link link">
+                <svg class="social-media-icon-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-icon list">
+              <a href="/" class="social-media-link link">
+                <svg class="social-media-icon-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <address class="contacts-item">
+          Feel free to contact
+          <a href="+61 (0) 383 766 284">+61 (0) 383 766 284</a>
+          <p>© 2022 - IceCream. All Rights Reserved.</p>
+        </address>
+      </footer>
+    </header>
+  </body>
 </html>
+
