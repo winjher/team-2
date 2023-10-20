@@ -10,11 +10,19 @@ body,
 html {
   width: 100%;
   height: 100%;
-  /* background-color:#F6FFFE; */
+  background-color: #84a178;
+}
+
+button {
+  cursor: pointer;
 }
 
 .lists {
   list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 #myCanvas {
@@ -133,6 +141,130 @@ html {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* Header Section */
+.header-nav {
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+}
+
+.menu-link {
+  color: #FCFCFC;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header-btn {
+  width: 152px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F8D24E;
+  border: 0;
+}
+
+.header-btn:focus {
+  color: #fff;
+  fill: #fff;
+  background-color: #0a8817;
+  box-shadow: -5px -5px 5px #f8d24e;
+}
+
+.header-btn:hover {
+  background-color: #0a8817;
+  box-shadow: -5px -5px 5px #f8d24e;
+}
+
+.menu-link:hover, .menu-link:focus {
+  color: #f8d24e;
+  transition: color .75s,transform .75s;
+  transform: scale(1.1);
+}
+
+/* End of Header Section */
+
+
+/* Hero Section */
+.menu-list {
+  display: flex;
+  gap: 28px;
+}
+
+.hero-content {
+  margin-top: 30px;
+}
+
+.hero-btn-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.hero-section-title {
+  max-width: 367px;
+  margin-bottom: 28px;
+  font-size: 38px;
+
+  max-width: 247px;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 32px;
+  font-family: Seymour One;
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.hero-btn-product {
+  color: #000;
+  background: 0 0;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  width: 134px;
+  height: 42px;
+
+  margin-right: 34px;
+  padding: 12px 34px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.hero-info {
+  max-width: 220px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  padding-top: 67px;
+  padding-left: 10px;
+}
+
+.hero-btn-about {
+  color: #f8d24e;
+}
+
+.hero-wrapper {
+  display: flex;
+}
+
+.hero-dots img {
+  width: 100%;
+  left: 0;    
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 20px;
+}
+
+/* End of Hero Section */
+
 
 /* Products Section */
 .products{
