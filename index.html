@@ -17,15 +17,19 @@
     <header class="header-page">
       <div class="header-container container">
         <nav class="header-nav">
-        <a href="/" class="ice-cream-icon link">
-          <img src="images/logo.png" alt="logo">
+        <a href="/" class="ice-cream-icon">
+          <svg width="20" height="20">
+            <use href="./images/icons.svg#icon-icecream"></use>
+          </svg>
         </a>
-          <ul class="menu-list lists">
+        <p><span class="logo">CE</span></p>
+
+          <ul class="menu-list">
             <li class="menu-list-item">
               <a class="menu-link link" href="index.html">Home</a>
             </li>
-            <li class="menu-list-item">
-              <a class="menu-link link" href="#about">How it's made?</a>
+            <li class="menu-list-ietm">
+              <a class="made" href="#about">How its's made?</a>
             </li>
             <li class="menu-list-item">
               <a class="menu-link link" href="#products">Our Products</a>
@@ -63,31 +67,34 @@
 
       <section class="products product-padding-section">
         <div class="container">
-        <h2 class="product-title">100% Natural <br/> 
-          Products</h2>
-        <ul class="products-list lists">
-          <li class="product-item">
-            <h3 class="product-item-title">Ice Cream</h3>
-            <p class="product-item-description">
-              Soft ice cream with a delicate taste. Made with milk, cream, sugar
-              and natural stabilizer
-            </p>
-          </li>
-          <li class="product-item">
-            <h3 class="product-item-title">Ice Coffee</h3>
-            <p class="product-item-description">
-              Fragrant invigorating drink created from 100% natural ingredients
-              without the use of preservatives and flavor enhancers
-            </p>
-          </li>
-          <li class="product-item">
-            <h3 class="product-item-title">Milk Shake</h3>
-            <p class="product-item-description">
-              Sweet drinks based on milk and ice cream, supplemented with
-              syrups, fruits, berries and other sweets of your choice
-            </p>
-          </li>
-        </ul>
+          <h2 class="product-title">
+            100% Natural <br />
+            Products
+          </h2>
+          <ul class="products-list lists">
+            <li class="product-item">
+              <h3 class="product-item-title">Ice Cream</h3>
+              <p class="product-item-description">
+                Soft ice cream with a delicate taste. Made with milk, cream,
+                sugar and natural stabilizer
+              </p>
+            </li>
+            <li class="product-item">
+              <h3 class="product-item-title">Ice Coffee</h3>
+              <p class="product-item-description">
+                Fragrant invigorating drink created from 100% natural
+                ingredients without the use of preservatives and flavor
+                enhancers
+              </p>
+            </li>
+            <li class="product-item">
+              <h3 class="product-item-title">Milk Shake</h3>
+              <p class="product-item-description">
+                Sweet drinks based on milk and ice cream, supplemented with
+                syrups, fruits, berries and other sweets of your choice
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -149,39 +156,45 @@
 
     <footer class="footer-page">
       <div class="container">
-        <p>HOMEMADE ICE CREAM MADE WITH PASSION</p>
-      </div>
-      <div class="social-media">
-        <ul class="social-media-list">
-          <li class="social-media-item">
-            <a href="/" class="social-media-link">
-              <svg class="social-media-icon-svg" width="20" height="20">
-                <use href="./images/icons.svg#icon-github"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-media-icon">
-            <a href="/" class="social-media-link link">
-              <svg class="social-media-icon-svg" width="20" height="20">
-                <use href="./images/icons.svg#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-media-icon list">
-            <a href="/" class="social-media-link link">
-              <svg class="social-media-icon-svg" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="footer-wrap">
+          <p class="footer-title">homemade ice cream made</p>
+          <strong class="footer-strong">with passion</strong>
+        </div>
+        <div class="social-media">
+          <ul class="social-media-list">
+            <li class="social-media-item">
+              <a href="/" class="social-media-link">
+                <svg class="social-media-icon-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-icon">
+              <a href="/" class="social-media-link link">
+                <svg class="social-media-icon-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-icon list">
+              <a href="/" class="social-media-link link">
+                <svg class="social-media-icon-svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <address class="contacts-item">
+      <p class="contact-item">
         Feel free to contact
-        <a href="+61 (0) 383 766 284">+61 (0) 383 766 284</a>
-        <p>© 2022 - IceCream. All Rights Reserved.</p>
-      </address>
+        <a href="+61 (0) 383 766 284" class="contact-number"
+          >+61 (0) 383 766 284</a
+        >
+      </p>
+      <hr class="footer-line" />
+      <p class="boundary">© 2022 - IceCream. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
