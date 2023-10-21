@@ -63,36 +63,37 @@
 
       <section class="products product-padding-section">
         <div class="container">
-          <h2 class="product-title">
-            100% Natural <br />
-            Products
-          </h2>
-          <ul class="products-list lists">
-            <li class="product-item">
-              <h3 class="product-item-title">Ice Cream</h3>
-              <p class="product-item-description">
-                Soft ice cream with a delicate taste. Made with milk, cream,
-                sugar and natural stabilizer
-              </p>
-            </li>
-            <li class="product-item">
-              <h3 class="product-item-title">Ice Coffee</h3>
-              <p class="product-item-description">
-                Fragrant invigorating drink created from 100% natural
-                ingredients without the use of preservatives and flavor
-                enhancers
-              </p>
-            </li>
-            <li class="product-item">
-              <h3 class="product-item-title">Milk Shake</h3>
-              <p class="product-item-description">
-                Sweet drinks based on milk and ice cream, supplemented with
-                syrups, fruits, berries and other sweets of your choice
-              </p>
-            </li>
-          </ul>
+        <p class="product-title">100% Natural</p>
+        <h2 class="product-header-title">Products</h2>
+        <ul class="products-list lists">
+          <li class="product-item">
+            <h3 class="product-item-title">Ice Cream</h3>
+            <p class="product-item-description">
+              Soft ice cream with a delicate taste. Made with milk, cream, sugar
+              and natural stabilizer
+            </p>
+            <button type="button" class="arrow-btn" data-modal-open><img src="./images/Arrow.svg"></button>
+          </li>
+          <li class="product-item">
+            <h3 class="product-item-title">Ice Coffee</h3>
+            <p class="product-item-description">
+              Fragrant invigorating drink created from 100% natural ingredients
+              without the use of preservatives and flavor enhancers
+            </p>
+            <button type="button" class="arrow-btn"><img src="./images/Arrow.svg"></button>
+          </li>
+          <li class="product-item">
+            <h3 class="product-item-title">Milk Shake</h3>
+            <p class="product-item-description">
+              Sweet drinks based on milk and ice cream, supplemented with
+              syrups, fruits, berries and other sweets of your choice
+            </p>
+            <button type="button" class="arrow-btn"><img src="./images/Arrow.svg"></button>
+          </li>
+        </ul>
         </div>
       </section>
+
 
       <!-- ADVANTAGE SECTION -->
 
@@ -192,5 +193,66 @@
       <hr class="footer-line" />
       <p class="boundary">© 2022 - IceCream. All Rights Reserved.</p>
     </footer>
+
+
+    <!-- Products about modal -->
+    
+     <div class="modal is-hidden" data-modal>
+      <div class="product-about-modal">
+        <button class="modal-close" data-modal-close>
+          <img src="images/close-button.svg" width="24px" height="24px" alt="close-button">
+      </button> 
+        <h2 class="about-modal-header">Chocolate Ice Cream</h2>
+        <div class="modal-picture">
+        </div>
+        <ul class="nutrients-list">
+          <li class="nutrient-item">
+            <p class="nutrient-grams">320</p>
+            <p class="nutrient-type">kcal</p>
+          </li>
+          <li class="nutrient-item">
+            <p class="nutrient-grams">4g</p>
+            <p class="nutrient-type">Protein</p>
+          </li>
+          <li class="nutrient-item">
+            <p class="nutrient-grams">8.2g</p>
+            <p class="nutrient-type">Fats</p>
+          </li>
+          <li class="nutrient-item">
+            <p class="nutrient-grams">40.4g</p>
+            <p class="nutrient-type">Carbs</p>
+          </li>
+        </ul>
+        <p class="ingredients">Ingredients</p>
+        <div class="ingredients-lists-container">
+          <ul class="ingredients-lists">
+            <li class="ingredient-item">Milk</li>
+            <li class="ingredient-item">Belgian Chocolate</li>
+            <li class="ingredient-item">Cream</li>
+            <li class="ingredient-item">Cocoa Powder</li>
+            <li class="ingredient-item">Sugar</li>
+            <li class="ingredient-item">Vanilla Sugar</li>
+          </ul>
+          <ul class="ingredients-lists">
+            <li class="ingredient-weight">100ml</li>
+            <li class="ingredient-weight">20g</li>
+            <li class="ingredient-weight">150ml</li>
+            <li class="ingredient-weight">30g</li>
+            <li class="ingredient-weight">40g</li>
+            <li class="ingredient-weight">10g</li>
+          </ul>
+        </div>
+        <form class="product-about-modal-form">
+          <input type="text" placeholder="Name" name="name" class="about-modal-form">
+          <input type="tel" placeholder="Phone" name="phone-number"class="about-modal-form">
+          <textarea class="about-modal-form comment-container" name="Comment" placeholder="Comment"></textarea>
+          <button class="form-submit" type="submit">Submit</button>
+        </form>
+      </div>
+</div> 
+
+
+  <script src="about-modal.js"></script>
+
   </body>
 </html>
