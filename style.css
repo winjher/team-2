@@ -1,5 +1,3 @@
-
-
 #app {
   padding: 2rem;
 }
@@ -118,7 +116,7 @@
 }
 
 .menu-link {
-  color: #FCFCFC;
+  color: #fcfcfc;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
@@ -131,7 +129,7 @@
   height: 42px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #F8D24E;
+  background: #f8d24e;
   border: 0;
 }
 
@@ -147,19 +145,43 @@
   box-shadow: -5px -5px 5px #f8d24e;
 }
 
-.menu-link:hover, .menu-link:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: #f8d24e;
-  transition: color .75s,transform .75s;
+  transition: color 0.75s, transform 0.75s;
   transform: scale(1.1);
 }
 
 /* End of Header Section */
 
-
 /* Hero Section */
 .menu-list {
   display: flex;
   gap: 28px;
+}
+
+.hero-stat-lists {
+  text-align: right;
+  margin-left: auto;
+  margin-top: 58px;
+}
+
+.hero-num {
+  text-align: right;
+  text-transform: uppercase;
+  color: #131313;
+  font-size: 46px;
+  font-weight: 900;
+}
+
+.hero-num-description {
+  color: white;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  height: 500px;
 }
 
 .hero-content {
@@ -204,7 +226,7 @@
   margin-bottom: 0;
   margin-left: 5px;
   font-size: 14px;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -221,21 +243,24 @@
   display: flex;
 }
 
-.hero-dots img {
-  width: 100%;
-  left: 0;    
-  z-index: -1;
+.hero-ice-cream {
   position: absolute;
   bottom: 0;
-  right: 0;
-  top: 20px;
+  right: 150px;
 }
 
+.hero-ice-cream img {
+  max-width: 400px;
+}
+
+.hero-stat-list {
+  text-align: right;
+  margin: auto;
+}
 /* End of Hero Section */
 
-
 /* Products Section */
-.products{
+.products {
   background: url(./images/product-bg.jpg);
   background-size: cover;
   background-position: center;
@@ -245,19 +270,19 @@
 .product-title {
   color: #131313;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 30px;
   font-weight: 800;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  text-align: center; 
+  text-align: center;
 }
 
-.product-header-title{
+.product-header-title {
   text-align: center;
   margin-bottom: 300px;
   color: #131313;
-  font-family: 'Seymour One';
+  font-family: "Seymour One";
   font-size: 36px;
   font-weight: 400;
   letter-spacing: 2.16px;
@@ -275,25 +300,30 @@
   padding: 165px 64px 16px;
   text-align: center;
   border-radius: 24px;
-  flex-direction: column; 
+  flex-direction: column;
   position: relative;
   height: 536px;
-  
 }
 
 .product-item:nth-child(1)::before {
-  background: linear-gradient(rgba(156,190,143,.7),rgba(156,190,143,.7)),#d9d9d9;
-  box-shadow: 0 5.34219px 20.0332px rgba(10,136,23,.25);
+  background: linear-gradient(
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
 
 .product-item:nth-child(2)::before {
-  background: linear-gradient(rgba(248,210,78,.7),rgba(248,210,78,.7)),#d9d9d9;
-  box-shadow: 0 5.40397px 20.2649px rgba(153,114,23,.25);
+  background: linear-gradient(rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+    #d9d9d9;
+  box-shadow: 0 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 
 .product-item:nth-child(3)::before {
-  background: linear-gradient(rgba(213,117,63,.7),rgba(213,117,63,.7)),#d9d9d9;
-  box-shadow: 0 5.41333px 20.3px rgba(0,0,0,.25);
+  background: linear-gradient(rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
+    #d9d9d9;
+  box-shadow: 0 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
 .product-item::before {
@@ -306,7 +336,6 @@
   left: 50%;
   transform: translate(-50%);
 }
-
 
 .product-item::after {
   width: 300px;
@@ -322,19 +351,19 @@
 }
 
 .product-item:nth-child(1)::after {
-  background-image: url('images/ice-cream.png');
+  background-image: url("images/ice-cream.png");
   height: 200px;
   top: -110px;
 }
 
 .product-item:nth-child(2)::after {
-  background-image: url('images/ice-coffee.png');
+  background-image: url("images/ice-coffee.png");
   height: 200px;
   top: -110px;
 }
 
 .product-item:nth-child(3)::after {
-  background-image: url('images/milk-shake.png');
+  background-image: url("images/milk-shake.png");
   height: 200px;
   top: -110px;
 }
@@ -355,7 +384,7 @@
   margin-bottom: 66px;
   color: var(--Black, #131313);
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -364,10 +393,10 @@
   text-transform: uppercase;
 }
 
-.product-item-description{
+.product-item-description {
   color: #131313;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -389,49 +418,48 @@
 /* End of Products Section */
 
 /* Product About modal */
-.modal{
+.modal {
   position: absolute;
   opacity: 1;
   box-sizing: border-box;
   pointer-events: auto;
   width: 100%;
-  top:0;
+  top: 0;
   left: 0;
 }
 
-.modal.is-hidden{
+.modal.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
-.product-about-modal{
+.product-about-modal {
   border-radius: 10px;
-  border: 2px solid #F8D24E;
-  background: #FCFCFC;
+  border: 2px solid #f8d24e;
+  background: #fcfcfc;
   width: 568px;
   position: relative;
 }
 
-
-.modal-close{
+.modal-close {
   position: absolute;
   top: 12px;
-  right:12px;
+  right: 12px;
   border: none;
-  background:none;
+  background: none;
 }
-.modal-picture{
+.modal-picture {
   width: 568px;
   height: 140px;
   margin-top: 24px;
   margin-bottom: 0;
   position: relative;
 }
-.modal-picture img{
+.modal-picture img {
   margin: 0 218px;
 }
-.modal-picture::before{
+.modal-picture::before {
   content: "";
   z-index: 99;
   width: 132px;
@@ -440,8 +468,14 @@
   position: absolute;
   top: 9%;
   left: 218px;
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.70) 0%, rgba(156, 190, 143, 0.70) 100%), #D9D9D9;
-  box-shadow: 0px 5.2602739334106445px 19.72602653503418px rgba(10, 136, 23, 0.25);
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7) 0%,
+      rgba(156, 190, 143, 0.7) 100%
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.2602739334106445px 19.72602653503418px
+    rgba(10, 136, 23, 0.25);
 }
 
 .modal-picture::after {
@@ -458,18 +492,18 @@
   background-image: url(./images/ice-cream.png);
 }
 
-.about-modal-header{
+.about-modal-header {
   color: #131313;
   text-align: center;
-  font-family: 'Seymour One';
+  font-family: "Seymour One";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.4; 
+  line-height: 1.4;
   margin-top: 32px;
 }
 
-.nutrients-list{
+.nutrients-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -477,9 +511,9 @@
   margin-top: 25px;
 }
 
-.nutrient-item{
+.nutrient-item {
   border-radius: 40px;
-  border: 2px solid #9CBE8F;
+  border: 2px solid #9cbe8f;
   width: 65px;
   height: 90px;
   list-style: none;
@@ -488,8 +522,8 @@
   align-items: center;
 }
 
-.nutrient-grams{
-  background: #9CBE8F;
+.nutrient-grams {
+  background: #9cbe8f;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   width: 53px;
   height: 53px;
@@ -499,18 +533,18 @@
   justify-content: center;
   color: #131313;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 2.33;
 }
-.nutrient-type{
+.nutrient-type {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #131313;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -518,10 +552,10 @@
   padding-top: 6px;
 }
 
-.ingredients{
+.ingredients {
   color: #131313;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -529,14 +563,14 @@
   margin-top: 48px;
 }
 
-.ingredients-lists-container{
+.ingredients-lists-container {
   display: flex;
   justify-content: space-between;
   margin-left: 40px;
   margin-right: 40px;
 }
 
-.ingredients-lists{
+.ingredients-lists {
   list-style: none;
   color: #131313;
   font-family: Montserrat;
@@ -547,10 +581,11 @@
   letter-spacing: 0.56px;
 }
 
-.ingredient-item,.ingredient-weight{
+.ingredient-item,
+.ingredient-weight {
   padding-top: 11px;
   color: #131313;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -558,44 +593,44 @@
   letter-spacing: 0.56px;
 }
 
-.product-about-modal-form{
+.product-about-modal-form {
   display: flex;
   flex-direction: column;
-  gap:16px;
+  gap: 16px;
   justify-content: center;
   align-items: center;
   margin-top: 48px;
   margin-bottom: 0;
 }
 
-.about-modal-form{
+.about-modal-form {
   width: 368px;
   height: 42px;
   border-radius: 10px;
-  border: 1px solid #84A178;
-  background: rgba(248, 210, 78, 0.10);
+  border: 1px solid #84a178;
+  background: rgba(248, 210, 78, 0.1);
 }
 
-.about-modal-form::placeholder{
+.about-modal-form::placeholder {
   padding: 11px 16px;
   color: #131313;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
 }
-.comment-container{
+.comment-container {
   width: 368px;
   height: 84px;
   resize: none;
 }
 
-.form-submit{
+.form-submit {
   width: 121px;
   height: 42px;
   border-radius: 10px;
-  background: #F8D24E;
+  background: #f8d24e;
   margin-top: 32px;
   border: none;
   margin-bottom: 32px;
@@ -662,7 +697,7 @@
   height: 1140px;
 }
 
-.customers-review-wrapper{
+.customers-review-wrapper {
   position: relative;
 }
 
@@ -676,37 +711,37 @@
 
 .carousel-item {
   width: 100%;
-  padding:1em;
-  color:white;
-  display:none;
-  &.item-selected{
-    display:block;
+  padding: 1em;
+  color: white;
+  display: none;
+  &.item-selected {
+    display: block;
   }
 }
 
-.carousel-nav{
-  width:100%;
-  padding:20px 0;
-  position:absolute;
+.carousel-nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
   bottom: 0;
   left: 0;
-  text-align:center;
+  text-align: center;
 }
 .carousel-button {
-  width:10px;
-  height:10px;
-  
-  display:inline-block;
+  width: 10px;
+  height: 10px;
+
+  display: inline-block;
   /*allow us to give a height to the object*/
-  
-  background:#cecece;
+
+  background: #cecece;
   border-radius: 50%;
   margin: 0 5px;
-/*   adds a cursor change to read it as a button */
-  cursor:pointer;
-  
+  /*   adds a cursor change to read it as a button */
+  cursor: pointer;
+
   &.button-selected {
-  background: #84a178;
+    background: #84a178;
   }
 }
 
@@ -718,7 +753,7 @@
   text-align: center;
 }
 
-.profile-img{
+.profile-img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -731,12 +766,12 @@
   width: 100%;
   max-width: 1013px;
   height: 422px;
-  object-fit:cover;
+  object-fit: cover;
   margin-bottom: 140px;
-  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 }
 
-.carousel-item-text{
+.carousel-item-text {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -744,7 +779,7 @@
   flex-direction: column;
 }
 
-.carousel-item-text-description{
+.carousel-item-text-description {
   height: 138px;
   width: 100%;
   max-width: 968px;
@@ -756,14 +791,14 @@
   align-items: center;
 }
 
-.carousel-item-text-name{
+.carousel-item-text-name {
   margin: 32px 0 42px;
   color: #131313;
   font-weight: 600;
 }
 
 /* Contacts Section */
-.contacts{
+.contacts {
   position: relative;
   background-color: #84a178;
   width: 100%;
@@ -772,7 +807,7 @@
   margin: 0 auto;
 }
 
-.contacts-wrapper{
+.contacts-wrapper {
   position: absolute;
   top: -20%;
   left: 0;
@@ -783,48 +818,48 @@
   gap: 50px;
 }
 
-.contacts-btns{
+.contacts-btns {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
 }
 
-.contacts-btn{
+.contacts-btn {
   padding: 10px 10px 10px 20px;
   font-size: 14px;
   font-weight: 700;
   border-radius: 10px;
-  background: #F8D24E;
-  border: 3px solid #F8D24E;
+  background: #f8d24e;
+  border: 3px solid #f8d24e;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contacts-btn-outline{
+.contacts-btn-outline {
   padding: 10px 10px 10px 20px;
   font-size: 14px;
   font-weight: 700;
   border-radius: 10px;
   background: transparent;
-  border: 3px solid #F8D24E;
+  border: 3px solid #f8d24e;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contacts-btn-outline:hover{
-  background: #F8D24E;
+.contacts-btn-outline:hover {
+  background: #f8d24e;
   color: #000;
 }
 
-.contacts-btn-icon-svg{
+.contacts-btn-icon-svg {
   fill: #000;
   margin-right: 10px;
 }
 
-.contacts-lists{
+.contacts-lists {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -832,17 +867,17 @@
   gap: 32px;
 }
 
-.contacts-item{
+.contacts-item {
   height: 542px;
   width: 100%;
   max-width: 368px;
   border-radius: 24px;
-  background: #FFF;
-  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+  background: #fff;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   padding: 30px;
 }
 
-.contacts-info-lists{
+.contacts-info-lists {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -851,7 +886,7 @@
   gap: 30px;
 }
 
-.contacts-info-item{
+.contacts-info-item {
   width: 100%;
   max-width: 368px;
   display: flex;
@@ -859,17 +894,17 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 20px;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   padding-bottom: 30px;
 }
 
-.contacts-info-item:last-child{
+.contacts-info-item:last-child {
   border-bottom: none;
   padding-bottom: 0;
 }
 
-.contacts-title{
-  background-color: #F8D24E;
+.contacts-title {
+  background-color: #f8d24e;
   padding: 10px;
   border-radius: 8px;
   font-size: 16px;
@@ -878,23 +913,23 @@
   text-transform: uppercase;
 }
 
-.contacts-subtitle{
+.contacts-subtitle {
   font-size: 16px;
   color: #131313;
   font-weight: 600;
 }
 
-.contacts-text-colored{
-  color: #D6936D;
+.contacts-text-colored {
+  color: #d6936d;
   font-size: 14px;
 }
 
-.contacts-text-colored:hover{
+.contacts-text-colored:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.contacts-text{
+.contacts-text {
   font-size: 16px;
   color: #131313;
   font-weight: 400;
@@ -909,7 +944,8 @@
 }
 
 .footer-wrap {
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-title {
@@ -938,22 +974,21 @@
   padding-left: 0;
 }
 
-.social-media {
+.social-and-contacts {
   margin-top: auto;
   margin-bottom: auto;
+  display: block;
 }
 
 .social-media-list {
   gap: 20px;
   margin-bottom: 34px;
   display: flex;
-  margin: 0;
-  padding: 0;
+  width: 100px;
   list-style: none;
-}
-
-.social-media-item {
-  text-align: left;
+  flex-wrap: wrap;
+  align-items: end;
+  margin-left: auto;
 }
 
 .social-media-icon-svg {
