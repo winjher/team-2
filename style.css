@@ -182,6 +182,7 @@
   position: relative;
   display: flex;
   height: 500px;
+  z-index: 0;
 }
 
 .hero-content {
@@ -251,11 +252,19 @@
 
 .hero-ice-cream img {
   max-width: 400px;
+
 }
 
 .hero-stat-list {
   text-align: right;
   margin: auto;
+}
+
+.hero-dots {
+  position: absolute;
+  z-index: -1;
+  top: 110px;
+  width: 100%;
 }
 /* End of Hero Section */
 
