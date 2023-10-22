@@ -1154,6 +1154,7 @@
 .footer-line {
   padding-bottom: 60px;
   border-right: none;
+  border-top: none;
 }
 .boundary {
   padding: 12px 0;
