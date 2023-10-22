@@ -466,20 +466,23 @@
 /* End of Products Section */
 
 /* Product About modal */
-.modal {
-  position: absolute;
-  opacity: 1;
-  box-sizing: border-box;
-  pointer-events: auto;
+.product-modal {
+  background: rgba(46, 47, 66, 0.40);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  top: 0;
-  left: 0;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.modal.is-hidden {
+.product-modal.is-hidden {
   visibility: hidden;
   opacity: 0;
-  pointer-events: none;
 }
 
 .product-about-modal {

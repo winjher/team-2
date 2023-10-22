@@ -49,7 +49,7 @@
             <li class="hero-btn-list-item">
               <a class="hero-btn-product link" href="#products">Products</a>
             </li>
-            <li class="hero-btn-list-item" >
+            <li class="hero-btn-list-item">
               <a class="hero-btn-about" href="#about">How it's made?</a>
             </li>
           </ul>
@@ -98,7 +98,7 @@
                 Soft ice cream with a delicate taste. Made with milk, cream,
                 sugar and natural stabilizer
               </p>
-              <button type="button" class="arrow-btn" data-modal-open>
+              <button type="button" class="arrow-btn" product-data-modal-open>
                 <img src="./images/Arrow.svg" />
               </button>
             </li>
@@ -342,17 +342,16 @@
           </ul>
           <div class="contacts-btns">
             <button type="button" class="contacts-btn">
-               
-                  Our Locations
-                  <svg class="contacts-btn-icon-svg" width="20" height="20">
-                    <use href="./images/icons.svg#icon-keyboard_arrow_right"></use>
-                  </svg>
+              Our Locations
+              <svg class="contacts-btn-icon-svg" width="20" height="20">
+                <use href="./images/icons.svg#icon-keyboard_arrow_right"></use>
+              </svg>
             </button>
             <button type="button" class="contacts-btn-outline">
-                  Franchise
-                  <svg class="contacts-btn-icon-svg" width="20" height="20">
-                    <use href="./images/icons.svg#icon-keyboard_arrow_right"></use>
-                  </svg>
+              Franchise
+              <svg class="contacts-btn-icon-svg" width="20" height="20">
+                <use href="./images/icons.svg#icon-keyboard_arrow_right"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -404,14 +403,13 @@
         <hr class="footer-line" />
       </div>
 
-      
       <p class="boundary">© 2022 - IceCream. All Rights Reserved.</p>
     </footer>
 
     <!-- Products about modal -->
-    <div class="modal-close is-hidden" data-modal-close>
+    <div class="product-modal is-hidden" product-data-modal>
       <div class="product-about-modal">
-        <button class="modal-close" data-modal-close>
+        <button class="modal-close" product-data-modal-close>
           <img
             src="images/close-button.svg"
             width="24px"
@@ -481,7 +479,7 @@
       </div>
     </div>
 
-    <script src="about-modal.js"></script>
+    <script src="./about-modal.js"></script>
     <script src="./customers-carousel.js"></script>
   </body>
 </html>
