@@ -4,8 +4,8 @@
 
 .container {
   width: 1200px; /* Can be modified when working on responsive */
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -244,6 +244,7 @@
 
 .hero-btn-about {
   color: #f8d24e;
+  text-decoration: underline;
 }
 
 .hero-wrapper {
@@ -1061,6 +1062,15 @@
   letter-spacing: 1.2px;
   text-transform: uppercase;
   padding-left: 0;
+
+}
+
+.footer-line {
+  padding-bottom:60px;
+  border-right: none;
+}
+.boundary{
+  padding:12px 0;
 }
 
 .social-and-contacts {
