@@ -785,13 +785,19 @@
   line-height: 1.3;
   display: inline-flex;
 }
-.read-more-btn:hover {
+.read-more-btn:hover,
+.contacts-btn:hover {
     background-color:#0A8817;
 }
-.read-more-btn:focus {
+.read-more-btn:focus,
+.contacts-btn:focus,
+.contacts-btn:focus .contacts-btn-icon-svg{
   background-color: #0A8817;
   color: #FCFCFC;
+  fill: white;
 }
+
+
 
 /* End of Advantages Section */
 
@@ -934,13 +940,22 @@
   gap: 32px;
 }
 
+
+
+.contacts-btns:hover{
+  color:white;
+
+
+}
+
+
 .contacts-btn {
   padding: 10px 10px 10px 20px;
   font-size: 14px;
   font-weight: 700;
   border-radius: 10px;
   background: #f8d24e;
-  border: 3px solid #f8d24e;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -959,14 +974,30 @@
 }
 
 .contacts-btn-outline:hover {
-  background: #f8d24e;
+  border: 3px solid #0A8817;
   color: #000;
+}
+
+/*for svg to transition togther with text**/
+.contacts-btn-outline:focus .contacts-btn-icon-svg {
+  fill: white;
+}
+/*for  text to transition at once**/
+.contacts-btn-outline:focus{
+  border: 3px solid #0A8817;
+  color: white;
 }
 
 .contacts-btn-icon-svg {
   fill: #000;
   margin-right: 10px;
 }
+
+.contacts-btn-icon-svg:focus {
+  fill:white;
+
+}
+
 
 .contacts-lists {
   display: flex;
