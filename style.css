@@ -477,6 +477,7 @@
   right: 12px;
   border: none;
   background: none;
+  flex-shrink:0;
 }
 .modal-picture {
   width: 568px;
