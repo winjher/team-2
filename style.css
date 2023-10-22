@@ -252,7 +252,6 @@
 
 .hero-ice-cream img {
   max-width: 400px;
-
 }
 
 .hero-stat-list {
@@ -651,6 +650,7 @@
 .advantage {
   background-color: #84a178;
   color: #fcfcfc;
+  margin-bottom: 200px;
 }
 
 .advantage-title {
@@ -681,8 +681,9 @@
 }
 
 .advantage-cow {
-  max-width: 490px;
-  margin-right: 30px;
+  max-width: 500px;
+  margin-left: 40px;
+  margin-bottom: 60px;
 }
 
 .advantage-text {
@@ -691,6 +692,50 @@
 
 .advantage-text-item {
   margin-bottom: 8px;
+}
+
+.advantage-bottom-item {
+  display: inline-flex;
+  flex-direction: column;
+  width: calc((100% - 48px) / 3);
+  align-items: center;
+  text-align: center;
+}
+
+.advantage-bottom-div {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  background-color: #f8d24e;
+}
+
+.advantage-bottom-head {
+  color: #fcfcfc;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.32px;
+  text-transform: uppercase;
+}
+
+.advantage-bottom-text {
+  color: #fcfcfc;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 176%; /* 28.16px */
+  letter-spacing: 0.32px;
+  text-wrap: wrap;
 }
 
 /* End of Advantages Section */
@@ -1001,7 +1046,7 @@
 }
 
 .social-media-icon-svg {
-  fill: #84A178;
+  fill: #84a178;
 }
 
 .contact-item {
