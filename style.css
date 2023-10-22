@@ -722,12 +722,19 @@
   display: flex;
   gap: 109px;
   align-items: center;
+  margin-bottom: 60px;
+}
+
+.advantage-picture-wrapper {
+  background: linear-gradient(rgba(248,210,78,.7),rgba(248,210,78,.7)),#d9d9d9;
+  box-shadow: 0 4.48583px 16.8218px rgba(153,114,23,.25);
+  border-radius: 250px;
 }
 
 .advantage-cow {
   max-width: 500px;
-  margin-left: 40px;
-  margin-bottom: 60px;
+  transform: translateY(39px);
+  margin-bottom: 32px;
 }
 
 .advantage-text-item {
