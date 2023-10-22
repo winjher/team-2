@@ -236,12 +236,20 @@
   padding-left: 10px;
 }
 
+.arrow-hero {
+  position: absolute;
+  top: 430px;
+  left: 255px;
+}
+
 .hero-btn-about {
   color: #f8d24e;
 }
 
 .hero-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-ice-cream {
@@ -1049,6 +1057,10 @@
   fill: #84a178;
 }
 
+.social-media-icon:focus,
+.social-media-icon:hover svg {
+  fill: white;
+}
 .contact-item {
   color: #131313;
   text-align: right;
