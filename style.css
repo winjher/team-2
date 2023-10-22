@@ -376,11 +376,11 @@
 
 .product-item::before {
   content: "";
-  width: 200px;
-  height: 200px;
+  width: 302px;
+  height: 302px;
   border-radius: 50%;
   position: absolute;
-  top: -100px;
+  top: -164px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -400,20 +400,20 @@
 
 .product-item:nth-child(1)::after {
   background-image: url("images/ice-cream.png");
-  height: 200px;
-  top: -110px;
+  height: 302px;
+  top: -178px;
 }
 
 .product-item:nth-child(2)::after {
   background-image: url("images/ice-coffee.png");
-  height: 200px;
-  top: -110px;
+  height: 302px;
+  top: -178px;
 }
 
 .product-item:nth-child(3)::after {
   background-image: url("images/milk-shake.png");
-  height: 200px;
-  top: -110px;
+  height: 302px;
+  top: -178px;
 }
 
 .product-item:nth-child(1) {
