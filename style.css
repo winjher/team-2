@@ -478,6 +478,7 @@
   left: 0px;
   opacity: 1;
   pointer-events: auto;
+  
 }
 
 .product-modal.is-hidden {
@@ -490,7 +491,9 @@
   border: 2px solid #f8d24e;
   background: #fcfcfc;
   width: 568px;
+  max-height: 996px;
   position: relative;
+  
 }
 
 .modal-close {
@@ -539,9 +542,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
+  border-radius: 50%;
   top: 4%;
   left: 218px;
-  background-image: url(./images/ice-cream.png);
+  background-image: url(./images/chocolate-icecream.jpg);
 }
 
 .about-modal-header {
@@ -661,10 +665,10 @@
   border-radius: 10px;
   border: 1px solid #84a178;
   background: rgba(248, 210, 78, 0.1);
+  padding: 16px 11px;
 }
 
 .about-modal-form::placeholder {
-  padding: 11px 16px;
   color: #131313;
   font-family: "Montserrat";
   font-size: 14px;
