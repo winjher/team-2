@@ -29,10 +29,12 @@
               <a class="menu-link link" href="#about">How it's made?</a>
             </li>
             <li class="menu-list-item">
-              <a class="menu-link link" href="#products">Our Products</a>
+              <a class="menu-link link" href="#products-section"
+                >Our Products</a
+              >
             </li>
             <li class="menu-list-item">
-              <a class="menu-link link" href="#contacts">Contact</a>
+              <a class="menu-link link" href="#contacts-section">Contact</a>
             </li>
           </ul>
           <button type="button" class="header-btn" buynow-data-modal-open>
@@ -72,7 +74,10 @@
         </div>
 
         <div class="hero-ice-cream">
-          <img src="assets/images/hero-ice-cream.png" alt="hero ice cream image" />
+          <img
+            src="assets/images/hero-ice-cream.png"
+            alt="hero ice cream image"
+          />
         </div>
 
         <ul class="hero-stat-lists list">
@@ -92,7 +97,7 @@
       </section>
 
       <!--PRODUCTS SECTION -->
-      <section class="products product-padding-section">
+      <section class="products product-padding-section" id="products-section">
         <div class="container">
           <p class="product-title">100% Natural</p>
           <h2 class="product-header-title">Products</h2>
@@ -141,13 +146,17 @@
       </section>
 
       <!-- ADVANTAGE SECTION -->
-      <section class="advantage container">
+      <section class="advantage container" id="about">
         <h2 class="advantage-title first-title">TRADITION AND LOVE</h2>
         <h1 class="advantage-title second-title">HOW IT'S MADE?</h1>
 
         <div class="advantage-wrapper">
           <div class="advantage-picture-wrapper">
-            <img class="advantage-cow" src="./assets/images/cow.png" alt="cow.jpg" />
+            <img
+              class="advantage-cow"
+              src="./assets/images/cow.png"
+              alt="cow.jpg"
+            />
           </div>
           <div class="advantage-text-div">
             <ul class="advantage-text lists">
@@ -243,7 +252,11 @@
                   class="carousel-item-img"
                 />
                 <div class="carousel-item-text">
-                  <img src="assets/images/cp1.jpg" alt="1.jpg" class="profile-img" />
+                  <img
+                    src="assets/images/cp1.jpg"
+                    alt="1.jpg"
+                    class="profile-img"
+                  />
                   <p class="carousel-item-text-description">
                     I love visiting your cafe. You prepare the most delicious
                     ice cream in Los Angeles! In addition, you have beautiful
@@ -261,7 +274,11 @@
                   class="carousel-item-img"
                 />
                 <div class="carousel-item-text">
-                  <img src="assets/images/cp2.jpg" alt="2.jpg" class="profile-img" />
+                  <img
+                    src="assets/images/cp2.jpg"
+                    alt="2.jpg"
+                    class="profile-img"
+                  />
                   <p class="carousel-item-text-description">
                     Ice cream is my passion! I love your chocolate hazelnut ice
                     cream! And I really like the excellent service - always
@@ -279,7 +296,11 @@
                   class="carousel-item-img"
                 />
                 <div class="carousel-item-text">
-                  <img src="assets/images/cp3.jpg" alt="3.jpg" class="profile-img" />
+                  <img
+                    src="assets/images/cp3.jpg"
+                    alt="3.jpg"
+                    class="profile-img"
+                  />
                   <p class="carousel-item-text-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam, voluptatum.
@@ -293,7 +314,7 @@
       </section>
 
       <!-- CONTACTS SECTION-->
-      <section class="contacts">
+      <section class="contacts" id="contacts-section">
         <div class="contacts-wrapper">
           <ul class="contacts-lists">
             <li class="contacts-item">
@@ -364,7 +385,9 @@
             <button type="button" class="contacts-btn" location-data-modal-open>
               Our Locations
               <svg class="contacts-btn-icon-svg" width="20" height="20">
-                <use href="./assets/svg/icons.svg#icon-keyboard_arrow_right"></use>
+                <use
+                  href="./assets/svg/icons.svg#icon-keyboard_arrow_right"
+                ></use>
               </svg>
             </button>
             <button
@@ -374,7 +397,9 @@
             >
               Franchise
               <svg class="contacts-btn-icon-svg" width="20" height="20">
-                <use href="./assets/svg/icons.svg#icon-keyboard_arrow_right"></use>
+                <use
+                  href="./assets/svg/icons.svg#icon-keyboard_arrow_right"
+                ></use>
               </svg>
             </button>
           </div>
@@ -672,36 +697,49 @@
       </div>
     </div>
 
-<!--Start of Mobile Menu using burger button-->
-  <div class="mobile-menu">
-    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="mobile-button-icon" width="32" height="32">
-        <use  class=" burger-icon" href="assets/svg/burger.svg#burger"> </use>
-      </svg>
-    </button>
-  </div>
+    <!--Start of Mobile Menu using burger button-->
+    <div class="mobile-menu">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobile-button-icon" width="32" height="32">
+          <use class="burger-icon" href="assets/svg/burger.svg#burger"></use>
+        </svg>
+      </button>
+    </div>
 
+    <!--Mobile Menu close button-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-toggle-close js-close-menu">
+        <svg class="mobile-icon" width="32" height="32">
+          <use
+            class="mobile-menu-close"
+            href="./assets/svg/icons.svg#close-icon"
+          ></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="nav-link nav-link-mobile" href="./index.html">Home</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="nav-link nav-link-mobile" href="#"> How it's made?</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="nav-link nav-link-mobile" href="#"> Our Products </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="nav-link nav-link-mobile" href="#"> Contact </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="nav-link nav-link-mobile" href="#"> Buy Now </a>
+        </li>
+      </ul>
+    </div>
 
-  <!--Mobile Menu close button-->
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button type="button" class="menu-toggle-close js-close-menu">
-      <svg class="mobile-icon" width="32" height="32">
-        <use class="mobile-menu-close" href="./assets/svg/icons.svg#close-icon"> </use>
-      </svg>
-    </button>
-    <ul class="mobile-menu-list">
-      <li class="mobile-menu-item"><a class="nav-link  nav-link-mobile" href="./index.html">Home</a> </li>
-      <li class="mobile-nav-item"><a class=" nav-link nav-link-mobile " href="#"> How it's made?</a> </li>
-        <li class="mobile-menu-item"> <a class="nav-link  nav-link-mobile" href="#"> Our Products </a></li>
-      <li class="mobile-menu-item"> <a class="nav-link  nav-link-mobile" href="#"> Contact </a></li>
-     <li class="mobile-menu-item"> <a class="nav-link  nav-link-mobile" href="#"> Buy Now </a></li>
-    </ul>
-   
-  
-  </div>
-  
-  <!-- ************************end of modal window***************** -->
-
+    <!-- ************************end of modal window***************** -->
 
     <script src="assets/js/product-modal.js"></script>
     <script src="assets/js/customers-carousel.js"></script>
