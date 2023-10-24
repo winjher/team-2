@@ -1717,7 +1717,7 @@ iframe {
 }
 
 /*Animation*/
-.social-media-icon:hover {
+.social-media-list:hover {
   animation: shake 4s;
 }
 
@@ -1748,7 +1748,7 @@ iframe {
 .cow-image:hover {
   cursor: pointer;
   animation: nodding infinite;
-  animation-duration: 1s;
+  animation-duration: 5s;
 }
 
 @keyframes nodding {
@@ -1771,7 +1771,7 @@ iframe {
 .bell-image:hover {
   cursor: pointer;
   animation: drop infinite;
-  animation-duration: 0.9s;
+  animation-duration: 3s;
 }
 @keyframes drop {
   0% {
@@ -1790,10 +1790,10 @@ iframe {
   animation-duration: 2s;
 }
 @keyframes leaning {
-  50% {
+  70% {
     transform: translateX(-0.5rem) rotate(-25deg);
   }
-  25% {
+  30% {
     transform: translateX(0.25rem) rotate(-200deg);
   }
 }
