@@ -11,3 +11,6 @@
 - Romulo Pahuyo Jr.
 - Jonathan Mariano
 - Crisanto Pedroso
+
+## Live Demo
+- [Live Demo](https://team-2.herokuapp.com/)
