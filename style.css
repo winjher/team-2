@@ -3,7 +3,7 @@
 }
 
 .container {
-  width: 1200px; /* Can be modified when working on responsive */
+  max-width: 1200px; /* Can be modified when working on responsive */
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -1738,4 +1738,99 @@
   font-weight: 600;
   line-height: normal;
   border: none;
+}
+
+/* will not be shown for desktop mode*/
+
+
+/*media queries*/
+
+/********************************************************************************/
+/*******************MOBILE first approach for 320px - 480px up to 767px*********/
+/*******************************************************************************/
+@media screen and (max-width:767px) {
+
+
+  .container {
+
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .section {
+      max-width:100%;
+      }
+
+
+.main {
+    max-width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    
+   
+  }
+
+
+.menu-list,
+.header-btn,
+.hero-wrapper,
+.arrow-hero,
+.hero-stat-lists,
+.hero-dots
+{
+ display:none;
+}
+
+
+.hero-content{
+  display:flex;
+  flex-direction: column;
+ 
+
+
+}
+
+.hero-section-title {
+
+  margin-bottom: 28px;
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  font-family: Seymour One;
+  line-height: 1.3;
+ 
+}
+
+    .mobile-menu {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+  
+    }
+
+      .menu-toggle {
+      background-color: #84a178;
+        border: none;
+        
+                }
+    
+
+
+
+
+
+  
+}
+
+/********************************************************************************/
+/*******************tablet 768px*********/
+/*******************************************************************************/
+@media screen and (min-width:768px) {
+
+.mobile-menu {
+  display: none;
+
+}
+
 }
