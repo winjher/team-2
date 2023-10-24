@@ -1631,19 +1631,19 @@ iframe {
 }
 
 .buynow-modal-product-item:nth-child(1)::after {
-  background-image: url("../images/ice-cream.png");
+  background-image: url("../images/ice-cream-desktop.png");
   height: 200px;
   top: -100px;
 }
 
 .buynow-modal-product-item:nth-child(2)::after {
-  background-image: url("../images/ice-coffee.png");
+  background-image: url("../images/ice-coffee-desktop.png");
   height: 200px;
   top: -100px;
 }
 
 .buynow-modal-product-item:nth-child(3)::after {
-  background-image: url("../images/milk-shake.png");
+  background-image: url("../images/milk-shake-desktop.png");
   height: 200px;
   top: -100px;
 }
