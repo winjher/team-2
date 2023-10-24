@@ -1139,7 +1139,8 @@ html {
 }
 
 .footer-strong {
-  color: #fcfcfc;
+  color: black;
+  text-shadow: 0 0 15px rgb(207, 38, 223), 0 0 25px rgb(207, 38, 223);
   justify-content: left;
   font-family: Montserrat;
   font-size: 58px;
@@ -1149,12 +1150,23 @@ html {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   padding-left: 0;
+  animation: glow 1.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate();
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .footer-line {
   padding-bottom: 60px;
   border-right: none;
   border-top: none;
+  border-left: none;
 }
 .boundary {
   padding: 12px 0;
@@ -1779,7 +1791,7 @@ iframe {
     opacity: 0;
   }
   100% {
-    transform: translateY(30px);
+    transform: translateY(4px);
   }
   25% {
     transform: translateY(-50px);
@@ -1796,6 +1808,24 @@ iframe {
   }
   30% {
     transform: translateX(0.25rem) rotate(-200deg);
+  }
+}
+
+.advantage-cow:hover {
+  cursor: pointer;
+  animation: dropcow infinite;
+  animation-duration: 3s;
+}
+
+@keyframes dropcow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(36px);
+  }
+  25% {
+    transform: translateY(-50px);
   }
 }
 
