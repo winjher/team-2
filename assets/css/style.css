@@ -316,7 +316,7 @@
 
 /* Products Section */
 .products {
-  background: url(./images/product-bg.jpg);
+  background: url(../images/product-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -406,19 +406,19 @@
 }
 
 .product-item:nth-child(1)::after {
-  background-image: url("images/ice-cream.png");
+  background-image: url("../images/ice-cream.png");
   height: 302px;
   top: -178px;
 }
 
 .product-item:nth-child(2)::after {
-  background-image: url("images/ice-coffee.png");
+  background-image: url("../images/ice-coffee.png");
   height: 302px;
   top: -178px;
 }
 
 .product-item:nth-child(3)::after {
-  background-image: url("images/milk-shake.png");
+  background-image: url("../images/milk-shake.png");
   height: 302px;
   top: -178px;
 }
@@ -552,7 +552,7 @@
   border-radius: 50%;
   top: 4%;
   left: 218px;
-  background-image: url(./images/chocolate-icecream.jpg);
+  background-image: url(../images/chocolate-icecream.jpg);
 }
 
 .about-modal-header {
@@ -848,7 +848,7 @@
 /* Customers Reviews Section */
 
 .customers-review {
-  background: url(./images/product-bg.jpg);
+  background: url(../images/product-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1650,19 +1650,19 @@
 }
 
 .buynow-modal-product-item:nth-child(1)::after {
-  background-image: url("./images/ice-cream.png");
+  background-image: url("../images/ice-cream.png");
   height: 200px;
   top: -100px;
 }
 
 .buynow-modal-product-item:nth-child(2)::after {
-  background-image: url("./images/ice-coffee.png");
+  background-image: url("../images/ice-coffee.png");
   height: 200px;
   top: -100px;
 }
 
 .buynow-modal-product-item:nth-child(3)::after {
-  background-image: url("./images/milk-shake.png");
+  background-image: url("../images/milk-shake.png");
   height: 200px;
   top: -100px;
 }
