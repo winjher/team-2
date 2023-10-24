@@ -2155,12 +2155,206 @@ iframe {
 /*******************tablet 768px*********/
 /*******************************************************************************/
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
+
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  .menu-container.is-open {
+    left: 0;
+  }
+
   .menu-toggle {
     background-color: #84a178;
     border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: 32px;
+    margin-top: 17px;
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    transform: translateX(100%); 
+    transition: left 250ms ease-in-out;
+    background: #85A279;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(64, 72, 224, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 52px;
   }
 
   .menu-list {
     display: none;
+  }
+
+  .ice-cream-icon  {
+    margin-right: auto;
+  }
+
+  .hero-wrapper img {
+    width: 152px;
+    height: 152px;
+  }
+
+  .hero-info {
+    min-width: 180px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    transform: translateY(32px);
+    padding-top: 0;
+  }
+
+  .hero-section {
+    height: 415px;
+  }
+
+  .hero-section-title {
+    font-size: 26px;
+    max-width: 247px;
+  }
+
+  .hero-ice-cream img {
+    width: 268px;
+    height: 329px;
+  }
+
+  .hero-dots {
+    display: none;
+  }
+
+  .hero-num {
+    font-size: 28px;
+  }
+
+  .hero-num-description {
+    font-size: 8px;
+  }
+
+  .product-item {
+    max-width: 224px;
+    height: 428px;
+    padding: 108px 26px 16px;
+  }
+
+  .product-item-title {
+    font-size: 20px;
+  }
+
+  .product-item-description {
+    font-size: 14px;
+    max-width: 173px;
+  }
+
+  .product-item-title {
+    margin-bottom: 40px;
+  }
+
+  .product-item:nth-child(1)::after {
+    background-image: url("../images/ice-cream-tablet.png");
+    height: 200px;
+    top: -110px;
+  }
+  
+  .product-item:nth-child(2)::after {
+    background-image: url("../images/ice-coffee-tablet.png");
+    height: 200px;
+    top: -110px;
+  }
+  
+  .product-item:nth-child(3)::after {
+    background-image: url("../images/milk-shake-tablet.png");
+    height: 200px;
+    top: -110px;
+  }
+
+  .product-item::before {
+    width: 200px;
+    height: 200px;
+    top: -100px;
+  }
+
+  .product-title {
+    font-size: 34px;
+  }
+
+  .product-header-title {
+    margin-bottom: 200px;
+  }
+
+  .advantage {
+    margin-bottom: 150px;
+  }
+
+  .advantage-cow {
+    width: 330px;
+    height: 330px;
+    transform: translateY(20px);
+    margin-bottom: 5px;
+  }
+
+  .advantage-text-div {
+    padding: 0;
+  }
+  
+  .advantage-wrapper {
+    gap: 38px;
+  }
+
+  .advantage-picture-wrapper {
+    border-radius: 165px;
+  }
+
+  .advantage-text-description {
+   width: 336px;
+   font-size: 12px;
+  }
+
+  .advantage-bottom {
+    display: flex;
+    gap: 80px;
+  }
+
+  .advantage-bottom-text {
+    font-size: 14px;
+    width: 152px;
+  }
+
+  .contacts-lists {
+    gap: 20px;
+  }
+
+  .contacts-wrapper {
+    left: 30px;
+  }
+
+  .contacts-lists > .contacts-item {
+    max-width: 224px;
+  }
+
+  .contact-item,
+  .contact-item a {
+    font-size: 12px;
+  }
+
+  .footer-title {
+    max-width: 352px;
+    margin-bottom: 8px;
+    font-size: 26px;
+  }
+
+  .footer-strong {
+    letter-spacing: .06em;
+    max-width: 352px;
+    margin-bottom: 0;
+    font-size: 48px;
   }
 }
