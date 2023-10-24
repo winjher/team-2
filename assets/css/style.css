@@ -1859,7 +1859,7 @@
   justify-items: center;
   margin: auto;
   padding: 0;
-  background-color: white;
+  background-color:#84A178;
   cursor: pointer;
   border: 1px solid rgba(46, 47, 66, .1);
   border-radius: 50%;
@@ -1867,7 +1867,7 @@
   position: absolute;
   top: 24px;
   right: 24px;
-  fill: var(--navcolor);
+  fill:white;
 }
 
 
