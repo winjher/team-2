@@ -1815,6 +1815,61 @@
         
                 }
     
+/*this is for the mobile close button*/
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  /*transform: translateX(100%);*/
+  transition: left 250ms ease-in-out;
+
+  background: var(--whitecolor);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(64, 72, 224, 0.08);
+
+}
+
+.menu-container.is-open {
+  /*transform: translateX(0);*/
+  left: 0;
+}
+
+.mobile-menu-list{
+ display:flex;
+ flex-direction: column;
+  text-align: center;
+}
+
+.menu-toggle-close{
+  display:flex;
+  justify-content:center ;
+}
+
+.menu-toggle-close {
+  stroke-width: 1px;
+  min-height: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  padding: 0;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid rgba(46, 47, 66, .1);
+  border-radius: 50%;
+  outline: none;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  fill: var(--navcolor);
+}
+
 
 
 
