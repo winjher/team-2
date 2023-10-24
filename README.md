@@ -11,3 +11,6 @@
 - Romulo Pahuyo Jr.
 - Jonathan Mariano
 - Crisanto Pedroso
+
+## Live Project Demo
+- [Live Project](https://winjher.github.io/team-2/)
