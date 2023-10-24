@@ -43,6 +43,15 @@
               <use href="assets/svg/icons.svg#icon-arrow-right-bold"></use>
             </svg>
           </button>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="mobile-button-icon" width="32" height="32">
+              <use class="burger-icon" href="assets/svg/burger.svg#burger"></use>
+            </svg>
+          </button>
         </nav>
       </div>
     </header>
@@ -700,7 +709,7 @@
     </div>
 
     <!--Start of Mobile Menu using burger button-->
-    <div class="mobile-menu">
+    <!-- <div class="mobile-menu">
       <button
         class="menu-toggle js-open-menu"
         aria-expanded="false"
@@ -710,7 +719,7 @@
           <use class="burger-icon" href="assets/svg/burger.svg#burger"></use>
         </svg>
       </button>
-    </div>
+    </div> -->
 
     <!--Mobile Menu close button-->
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -724,7 +733,7 @@
       </button>
       <ul class="mobile-menu-list">
         <li class="mobile-menu-item">
-          <a class="nav-link nav-link-mobile" href="./index.html">Home</a>
+          <a class="nav-link nav-link-mobile nav-mobile-active" href="./index.html">Home</a>
         </li>
         <li class="mobile-nav-item">
           <a class="nav-link nav-link-mobile" href="#"> How it's made?</a>
