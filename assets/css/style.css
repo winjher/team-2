@@ -2417,12 +2417,8 @@ iframe {
     gap: 20px;
   }
 
-  .contacts-wrapper {
-    left: 30px;
-  }
-
   .contacts-lists > .contacts-item {
-    max-width: 224px;
+    max-width: 100%;
   }
 
   .contact-item,
