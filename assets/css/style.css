@@ -1872,11 +1872,75 @@
 
 
 
+/*Animation*/
+.social-media-icon:hover{
+  animation: shake 4s;
+}
 
+@keyframes shake {
+  10% {
+      transform: rotate(0deg);
+ }
+  10% {
+      transform: rotate(-10deg);
+ }
+  20% {
+      transform: rotate(10deg);
+ }
+  30% {
+      transform: rotate(-10deg);
+ }
+  40% {
+      transform: rotate(10deg);
+ }
+  50% {
+      transform: rotate(0deg);
+ }
+  100% {
+      transform: rotate(0deg);
+ }
+}
+
+.cow-image:hover {
+  cursor: pointer;
+  animation: nodding infinite; 
+  animation-duration: 1s;
+}
+
+@keyframes nodding{
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  20% { transform: translate(-2px, 0px) rotate(1deg); }
+  30% { transform: translate(-2px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+}
+.bell-image:hover {
+  cursor: pointer;
+  animation: drop infinite; 
+  animation-duration: .900s;
+}
+@keyframes drop{
+0%{opacity: 0}
+100%{transform: translateY(30px)}
+25%{transform: translateY(-50px)}
+}
+.cone-image:hover {
+  cursor: pointer;
+  animation: leaning infinite;
+  animation-duration: 2s;
+}
+@keyframes leaning {
+    50% {
+      transform: translateX(-0.5rem) rotate(-25deg);
+    }
+    25% {
+      transform: translateX(.25rem) rotate(-200deg);
+    }
+  }
 
 
   
-}
+
 
 /********************************************************************************/
 /*******************tablet 768px*********/
