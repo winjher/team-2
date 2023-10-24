@@ -2161,8 +2161,86 @@ iframe {
     padding: 0 32px;
   }
 
+  .nav-link-mobile {
+    color: #fcfcfc;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .mobile-menu-item:last-child {
+    display: none;
+  }
+
+  .mobile-menu-item {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .menu-toggle-close {
+    stroke-width: 1px;
+    min-height: 24px;
+    min-width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    padding: 0;
+    background-color: #84a178;
+    cursor: pointer;
+    border: 1px solid rgba(46, 47, 66, 0.1);
+    border-radius: 50%;
+    outline: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    fill: white;
+  } 
+
   .menu-container.is-open {
+    transform: translateX(0); 
     left: 0;
+  }
+
+  .mobile-menu-header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+  }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: left 250ms ease-in-out;
+    background: #85a279;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(64, 72, 224, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 52px;
   }
 
   .menu-toggle {
@@ -2237,6 +2315,12 @@ iframe {
 
   .hero-num-description {
     font-size: 8px;
+  }
+
+  .arrow-hero {
+    position: absolute;
+    top: 351px;
+    left: 199px;
   }
 
   .product-item {
