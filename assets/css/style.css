@@ -2074,6 +2074,10 @@ iframe {
     justify-content: center;
   }
 
+  .mobile-menu-item:last-child {
+    display: none;
+  }
+
   .menu-toggle-close {
     stroke-width: 1px;
     min-height: 24px;
