@@ -499,8 +499,11 @@ html {
   border: 2px solid #f8d24e;
   background: #fcfcfc;
   width: 568px;
-  max-height: 996px;
+  max-height: 100%;
   position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 32px 40px;
 }
 
 .modal-close {
@@ -512,14 +515,13 @@ html {
   flex-shrink: 0;
 }
 .modal-picture {
-  width: 568px;
+  max-width: 568px;
   height: 140px;
-  margin-top: 24px;
-  margin-bottom: 0;
+  margin: 24px auto 0;
   position: relative;
 }
 .modal-picture img {
-  margin: 0 218px;
+  
 }
 .modal-picture::before {
   content: "";
@@ -528,8 +530,8 @@ html {
   height: 132px;
   border-radius: 50%;
   position: absolute;
-  top: 9%;
-  left: 218px;
+  top: 5px;
+  left: 175px;
   background: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7) 0%,
@@ -550,8 +552,8 @@ html {
   background-repeat: no-repeat;
   position: absolute;
   border-radius: 50%;
-  top: 4%;
-  left: 218px;
+  top: -5px;
+  left: 175px;
   background-image: url(../images/chocolate-icecream.jpg);
 }
 
@@ -563,7 +565,6 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
-  margin-top: 32px;
 }
 
 .nutrients-list {
@@ -624,13 +625,12 @@ html {
   font-weight: 500;
   line-height: 1.4;
   margin-top: 48px;
+  margin-bottom: 24px;
 }
 
 .ingredients-lists-container {
   display: flex;
   justify-content: space-between;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .ingredients-lists {
@@ -696,7 +696,6 @@ html {
   background: #f8d24e;
   margin-top: 32px;
   border: none;
-  margin-bottom: 32px;
 }
 /* END OF PRODUCT ABOUT MODAL */
 
