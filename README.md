@@ -12,5 +12,5 @@
 - Jonathan Mariano
 - Crisanto Pedroso
 
-## Live Demo
-- [Live Demo](https://team-2.herokuapp.com/)
+## Live Project Demo
+- [Live Project](https://winjher.github.io/team-2/)
