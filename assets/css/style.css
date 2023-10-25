@@ -516,8 +516,8 @@ html {
   right: 12px;
   border: none;
   background: none;
-  flex-shrink: 0;
 }
+
 .modal-picture {
   max-width: 568px;
   height: 140px;
@@ -1560,13 +1560,17 @@ iframe {
   gap: 40px;
   padding: 40px;
 }
+ .buynow-modal-close{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+} 
 
 .buynow-icon-close {
   width: 24px;
   height: 24px;
-  position: absolute;
-  top: 12px;
-  right: 12px;
   fill: #131313;
   padding: 5px;
 }
