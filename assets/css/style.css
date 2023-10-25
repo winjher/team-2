@@ -1933,7 +1933,7 @@ iframe {
 .bell-image:hover {
   cursor: pointer;
   animation: drop infinite;
-  animation-duration: 3s;
+  animation-duration: 5s;
 }
 @keyframes drop {
   0% {
@@ -1983,61 +1983,8 @@ iframe {
   }
 }
 
-.product-item:nth-child(1):hover::after {
-  left: 35px;
-  animation: bounce 2s ease infinite;
-}
-@keyframes bounce {
-  70% {
-    transform: translateY(0%);
-  }
-  80% {
-    transform: translateY(-15%);
-  }
-  90% {
-    transform: translateY(0%);
-  }
-  95% {
-    transform: translateY(-7%);
-  }
-  97% {
-    transform: translateY(0%);
-  }
-  99% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.product-item:nth-child(2):hover::after {
-  left: 35px;
-  animation: bounce 2s ease infinite;
-}
-@keyframes bounce {
-  70% {
-    transform: translateY(0%);
-  }
-  80% {
-    transform: translateY(-15%);
-  }
-  90% {
-    transform: translateY(0%);
-  }
-  95% {
-    transform: translateY(-7%);
-  }
-  97% {
-    transform: translateY(0%);
-  }
-  99% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
+.product-item:nth-child(1):hover::after,
+.product-item:nth-child(2):hover::after,
 .product-item:nth-child(3):hover::after {
   left: 35px;
   animation: bounce 2s ease infinite;
@@ -2172,6 +2119,12 @@ iframe {
     background-image: url("../images/milk-shake-mobile.png");
     height: 200px;
     top: -110px;
+  }
+
+  .product-item:nth-child(1):hover::after,
+  .product-item:nth-child(2):hover::after,
+  .product-item:nth-child(3):hover::after {
+    left: -10px;
   }
 
   /* End of products responsive */
@@ -2727,6 +2680,12 @@ iframe {
 
   .product-header-title {
     margin-bottom: 200px;
+  }
+
+  .product-item:nth-child(1):hover::after,
+  .product-item:nth-child(2):hover::after,
+  .product-item:nth-child(3):hover::after {
+    left: -38px;
   }
 
   .advantage {
