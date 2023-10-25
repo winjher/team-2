@@ -2377,7 +2377,20 @@ iframe {
     font-style: normal;
     font-weight: 600;
     margin-top: 90px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .mobile-menu-btn:hover {
+    background-color: #0a8817;
+    box-shadow: -5px -5px 5px #f8d24e;
+    }
+
+.mobile-menu-btn :focus {
+  color: #fff;
+  fill: #fff;
+  background-color: #0a8817;
+  box-shadow: -5px -5px 5px #f8d24e;
+}
 
   .nav-link-mobile {
     color: #fcfcfc;
@@ -2386,6 +2399,12 @@ iframe {
     font-style: normal;
     font-weight: 700;
   }
+
+   .nav-link-mobile:focus,
+    .nav-link-mobile:hover{
+      color: #131313;
+  
+        }
 
   .nav-mobile-active {
     color: #131313;
