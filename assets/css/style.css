@@ -1186,6 +1186,13 @@ html {
   padding: 30px;
 }
 
+.contacts-item:hover,
+.contacts-item:focus {
+  box-shadow: 7px 17px 32px 21px rgba(115, 112, 79, 0.71);
+  -webkit-box-shadow: 7px 17px 32px 21px rgba(115, 112, 79, 0.71);
+  -moz-box-shadow: 7px 17px 32px 21px rgba(115, 112, 79, 0.71);
+}
+
 .contacts-info-lists {
   height: 100%;
   display: flex;
@@ -1955,19 +1962,107 @@ iframe {
 
 .advantage-cow:hover {
   cursor: pointer;
-  animation: dropcow infinite;
-  animation-duration: 3s;
+  animation: hithere 2s ease infinite;
 }
-
-@keyframes dropcow {
-  0% {
-    opacity: 0;
+@keyframes hithere {
+  30% {
+    transform: scale(1.2);
+  }
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
   }
   100% {
-    transform: translateY(36px);
+    transform: scale(1);
   }
-  25% {
-    transform: translateY(-50px);
+}
+
+.product-item:nth-child(1):hover::after {
+  left: 35px;
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.product-item:nth-child(2):hover::after {
+  left: 35px;
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.product-item:nth-child(3):hover::after {
+  left: 35px;
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
