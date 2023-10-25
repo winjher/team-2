@@ -1,3 +1,4 @@
+
 document.querySelectorAll(".customers-carousel").forEach(element => {
  
     const items =element.querySelectorAll(".carousel-item");
