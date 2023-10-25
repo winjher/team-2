@@ -1257,7 +1257,8 @@ html {
   flex-direction: column;
   align-items: center;
 
-  width: 568px;
+  width: 100%;
+  max-width: 568px;
   height: 668px;
   border-radius: 10px;
   border: 2px solid #f8d24e;
@@ -1385,7 +1386,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 568px;
+  width: 100%;
+  max-width: 568px;
   height: 458px;
   border-radius: 10px;
   border: 2px solid #f8d24e;
@@ -1405,7 +1407,8 @@ html {
 }
 
 .iframe {
-  width: 448px;
+  width: 100%;
+  max-width: 448px;
   height: 260px;
   resize: none;
   border-radius: 10px;
@@ -1465,7 +1468,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 568px;
+  width: 100%;
+  max-width: 568px;
   height: 449px;
   border-radius: 10px;
   border: 2px solid #f8d24e;
@@ -1499,6 +1503,7 @@ html {
 iframe {
   width: 448px;
   height: 205px;
+  border-radius: 10px;
 }
 
 .readmore-modal-content-text {
@@ -2202,6 +2207,50 @@ iframe {
 
   .buynow-modal-product-list {
     flex-direction: column;
+  }
+
+  .buynow-user-contact input, .buynow-user-contact textarea{
+    width: 100%;
+  }
+
+  /* location modal */
+  .location-modal-content {
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    padding: 0 30px;
+  }
+
+  /* franchise modal */
+  .franchise-modal-content {
+    height: 100%;
+  }
+
+  .franchise-modal-content-text{
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .franchise-user-contact{
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .franchise-user-contact input, .franchise-user-contact textarea{
+    width: 100%;
+  }
+
+  /* readmore modal */
+  .readmore-modal-content{
+    height: 100%;
+    padding: 0 30px;
+  }
+
+  .readmore-modal-content iframe,
+  .readmore-modal-content-text{
+    width: 100%;
   }
 }
 
