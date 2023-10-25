@@ -188,6 +188,17 @@ html {
   color: #131313;
   font-size: 46px;
   font-weight: 900;
+  text-shadow: 0 0 15px green, 0 0 25px greenyellow;
+  animation: glow 1.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate();
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
 
 .hero-num-description {
@@ -273,6 +284,24 @@ html {
   top: 487px;
   left: 255px;
   color: white;
+  animation: 0.25s tilt-n-move-shaking infinite;
+}
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }
 
 .hero-btn-about {
