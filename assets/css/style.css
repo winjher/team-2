@@ -1962,7 +1962,7 @@ iframe {
 
 .advantage-cow:hover {
   cursor: pointer;
-  animation: hithere 1s ease infinite;
+  animation: hithere 2s ease infinite;
 }
 @keyframes hithere {
   30% {
